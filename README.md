@@ -17,6 +17,7 @@ The dataset consists of 4 tables containing information regarding carbon emissio
 ## Carbon Emission Analysis
 ### Which products contribute the most to carbon emissions?
 Get top 10 products contribute the most to carbon emissions
+
 **SQL:**
 `select product_name, sum(carbon_footprint_pcf) as co2_emission
 from product_emissions
@@ -24,6 +25,7 @@ group by 1
 order by 2 desc
 limit 10
 `
+
 **Result:**
 | product_name                                                                                                                       | co2_emission | 
 | ---------------------------------------------------------------------------------------------------------------------------------: | -----------: | 
@@ -38,10 +40,13 @@ limit 10
 | Audi A6                                                                                                                            | 111282       | 
 | Average of all GM vehicles produced and used in the 10 year life-cycle.                                                            | 100621       | 
 
+
 **Insights:**
 Wind Turbine dominate the list of industries that contribute the most to CO2 emissions.
 ###
 ###
 ###
+
+
 
 ## Conclusion
